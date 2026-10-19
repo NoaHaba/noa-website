@@ -1,20 +1,84 @@
 <!doctype html>
-<html lang="en" dir="ltr">
+<html lang="he" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Website</title>
+    <title>אתר אינטרנט</title>
     <link href="/styles/reset.css" rel="stylesheet" />
     <link href="/styles/main.css" rel="stylesheet" />
   </head>
+
   <body>
     <header>
-      <h1>Welcome to my Website!</h1>
+      <div class="site-title">אתר אינטרנט</div>
+
+      <button class="menu-button" type="button" aria-label="פתיחת תפריט">
+        <img src="/icons/menu.svg" alt="" />
+      </button>
+
+      <nav>
+        <button class="close-button" type="button" aria-label="סגירת תפריט">
+          <img src="/icons/close.svg" alt="" />
+        </button>
+
+        <a href="index.html">דף הבית</a>
+        <a href="elements.html">אלמנטים</a>
+        <a href="https://github.com/product-jam-2027/course/">הקורס</a>
+      </nav>
     </header>
+
     <main>
-      <p>This is a paragraph.</p>
+      <h1>ברוכים הבאים לאתר האינטרנט שלי</h1>
+
+      <p>
+        האינטרנט (ב<a href="https://he.wikipedia.org/wiki/עברית">עברית</a>:
+        מִרְשֶׁתֶת) הוא
+        <a href="https://he.wikipedia.org/wiki/רשת_תקשורת_נתונים"
+          >רשת תקשורת נתונים</a
+        >
+        בהיקף כמעט כלל־עולמי שנוצרה כתוצאה מחיבורים רבים בין
+        <a href="https://he.wikipedia.org/wiki/רשת_מחשבים">רשתות מחשבים</a>
+        שאפשרו תקשורת בין מחשבים רבים ברשתות רבות.
+      </p>
+
+      <p>
+        התשתית הרעיונית והמחקרית של האינטרנט נמצאת בתחילת שנות ה-60 במסגרת
+        מחקרים של
+        <a
+          href="https://he.wikipedia.org/wiki/הסוכנות_הצבאית_לפרויקטים_מחקריים_מתקדמים"
+          >הסוכנות הצבאית לפרויקטים מחקריים מתקדמים</a
+        >
+        של
+        <a href="https://he.wikipedia.org/wiki/משרד_ההגנה_האמריקאי"
+          >משרד ההגנה האמריקאי</a
+        >
+        (<a href="https://he.wikipedia.org/wiki/ARPA">ARPA</a>). תחילת פעילותו
+        של האינטרנט, כלומר הרשת המבצעית הראשונה (<a
+          href="https://he.wikipedia.org/wiki/ARPANET"
+          >ARPANET</a
+        >), החלה בסוף שנות ה-60, כאשר בשנת
+        <a href="https://he.wikipedia.org/wiki/1969">1969</a>
+        נשלחה ההודעה הראשונה בין שני מחשבים מחוברים. היקף רשת האינטרנט, כמות
+        המידע העצומה השמורה בשרתים והפעילות הרבה שמבוצעת באמצעות האינטרנט הפכו
+        את האינטרנט לגורם רב משמעות בהתפתחות הכלכלית, החברתית והתרבותית.
+      </p>
+
+      <form id="greeting-form">
+        <label for="first-name">איך קוראים לך?</label>
+        <input
+          type="text"
+          id="first-name"
+          name="first-name"
+          placeholder="שם פרטי"
+        />
+        <button type="submit">בבקשה ללחוץ על הכפתור</button>
+      </form>
     </main>
+
+    <footer>
+      <p>Product Jam 2027</p>
+    </footer>
 
     <script type="module" src="/main.js"></script>
   </body>

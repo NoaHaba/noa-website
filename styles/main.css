@@ -1,1 +1,196 @@
+
 /* Your styles go here */
+
+body {
+  font-family: "Rubik", sans-serif;
+  color: #333;
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  background-color: #4879b8;
+  color: white;
+  padding: 30px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-title {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+nav {
+  display: flex;
+  gap: 24px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* Main content */
+main {
+  max-width: 600px;
+  margin: 24px auto;
+}
+
+/* Main heading */
+main h1 {
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+/* Paragraphs */
+main p {
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 12px;
+}
+
+/* Links inside the main content */
+main a {
+  color: #4879b8;
+}
+
+/* Greeting form */
+#greeting-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 40px;
+}
+
+#greeting-form input {
+  width: 220px;
+  padding: 8px;
+  border: 2px solid #bbb;
+  border-radius: 7px;
+  font: inherit;
+}
+
+#greeting-form button {
+  width: 220px;
+  padding: 10px;
+  background-color: #4879b8;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  margin-top: auto;
+  padding: 20px;
+  text-align: center;
+  color: #aaa;
+}
+
+/* Hide menu buttons on desktop */
+.menu-button,
+.close-button {
+  display: none;
+}
+
+/* Mobile design */
+@media (max-width: 600px) {
+  main {
+    width: 100%;
+    padding: 24px 30px;
+    margin: 0 auto;
+  }
+
+  main h1 {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  #greeting-form input,
+  #greeting-form button {
+    width: 100%;
+  }
+
+  #greeting-form {
+    align-items: stretch;
+  }
+
+  header {
+    padding: 20px 30px;
+  }
+
+  .site-title {
+    font-size: 28px;
+  }
+
+  /* Open menu button */
+  .menu-button {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .menu-button img {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* Mobile navigation */
+  nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #b9d3f3;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+  }
+
+  /* Show navigation when menu is open */
+  nav.open {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  nav a {
+    color: #333;
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  /* Close menu button */
+  .close-button {
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .close-button img {
+    width: 24px;
+    height: 24px;
+  }
+}
