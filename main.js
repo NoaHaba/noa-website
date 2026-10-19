@@ -1,21 +1,25 @@
-// Your JavaScript goes here
+// Mobile menu
 const menuButton = document.querySelector(".menu-button");
 const closeButton = document.querySelector(".close-button");
-const nav = document.querySelector("nav");
+const nav = document.querySelector(".site-nav");
 
-menuButton.addEventListener("click", function () {
-  nav.classList.add("open");
-});
+if (menuButton && closeButton && nav) {
+  menuButton.addEventListener("click", function () {
+    nav.classList.add("open");
+  });
 
-closeButton.addEventListener("click", function () {
-  nav.classList.remove("open");
-});
+  closeButton.addEventListener("click", function () {
+    nav.classList.remove("open");
+  });
+}
 
 // Greeting form
 const greetingForm = document.querySelector("#greeting-form");
 const firstName = document.querySelector("#first-name");
 
-greetingForm.addEventListener("submit", function (event) {
-  event.preventDefault();
-  alert("שלום, " + firstName.value);
-});
+if (greetingForm) {
+  greetingForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+    alert("איזה כיף שהגעת, " + firstName.value + "! 💚");
+  });
+}

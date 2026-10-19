@@ -9,14 +9,34 @@
     <link href="/styles/main.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
+    <header class="site-header" dir="rtl">
+      <div class="site-title">נועה | קצת מהעולם שלי</div>
+
+      <button class="menu-button" type="button" aria-label="פתיחת תפריט">
+        <img src="/icons/menu.svg" alt="" />
+      </button>
+
+      <nav class="site-nav">
+        <button class="close-button" type="button" aria-label="סגירת תפריט">
+          <img src="/icons/close.svg" alt="" />
+        </button>
+
+        <a href="index.html">דף הבית</a>
+        <a href="about.html">קצת עליי</a>
+        <a href="hobbies.html">הדברים שעושים לי טוב</a>
+        <a href="elements.html">אלמנטים</a>
+      </nav>
+    </header>
+
+    <div class="elements-intro">
       <h1>HTML Elements</h1>
       <p>
         This page provides an overview of common HTML elements. Use this page to
         see how your CSS changes the styling of these elements.
       </p>
-    </header>
-    <nav>
+    </div>
+
+    <nav class="elements-nav">
       <ul>
         <li>
           <strong><a href="#text">Text</a></strong>
@@ -622,5 +642,7 @@
         </form>
       </section>
     </main>
+
+    <script type="module" src="/main.js"></script>
   </body>
 </html>
